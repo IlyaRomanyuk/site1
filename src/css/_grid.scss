@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1140px;
+    margin: auto;
+}
+
+@media (max-width: 1199px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px) {         
+    .container{
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}

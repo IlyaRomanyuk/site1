@@ -1,0 +1,37 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+
+    max-width: 812px;
+    width: 100%; 
+
+    &__link{
+
+        padding: 12px 22px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #868686;
+        font-size: 13px;
+
+        &:hover{
+            display: inline-block;
+            background-color: #ffbb42;
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 991px) {         
+    .nav{
+        display: none;
+    }
+}
+
+
+

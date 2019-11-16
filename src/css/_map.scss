@@ -1,0 +1,130 @@
+.map{
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &__background img{
+        display: block;
+        max-width: 100%;
+        padding-bottom: 52px;
+        border-bottom: 1px solid #e3e7ec;
+    }
+
+    &__menu{
+        max-width: 730px;
+        padding-top: 57px;
+        width: 100%;
+        display: flex;
+       justify-content: space-between;
+       margin-bottom: 30px;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #394b50;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    &__tel{
+        display: flex;
+        margin-bottom: 25px;
+        align-items: center;
+        font-size: 22px;
+
+        img{
+            margin-right: 10px;
+        }
+    }
+
+    &__social{
+        display: flex;
+        align-items: center;
+
+        img{
+            margin-right: 15px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        
+    }
+
+}
+
+.send{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 55px;
+    padding: 0 90px;
+
+    &__name,
+    &__address{
+        border: 1px solid #cbcbcb;
+        padding: 20px 0px 16px 16px;
+        width: 100%;
+    }
+
+    &__name{
+        max-width: 306px;
+    }
+
+    &__address{
+        max-width: 386px;   
+    }
+
+    &__button{
+        max-width: 218px;
+        width: 100%;
+        text-transform: uppercase;
+        padding: 20px 0px 18px 0px;
+        color: #fff;
+        background-color: #ffbb42;
+        border: none;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .map{
+        &__form{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input{
+                margin-bottom: 20px;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            a{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #709dca;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer{
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,88 @@
+.price{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+
+    &__item{
+        flex-basis: 33%;
+        background-color: #fff;
+        padding: 30px 54px;
+        border: 1px solid #ccd5df;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            background-color: #709dca;
+            .price__text,
+            .price__money,
+            .price__per,
+            .price__account,
+            .price__ser,
+            .price__hour{
+                color: #fff;
+            }
+            transform: scale(1.07, 1.15);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &__text{
+        font-size: 25px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        color: #818b95;
+    }
+
+    &__money{
+        font-size: 60px;
+        font-weight: 700;
+        color: #ffbb42;
+    }
+
+    &__per{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #818b95;
+    }
+
+    &__account{
+        margin-top: 30px;
+    }
+
+    &__account,
+    &__hour,
+    &__ser{
+        font-size: 14px;
+        font-weight: 400;
+        border-top: 1px solid #e2e9f0;
+        padding: 16px 0;
+        color: #b5bbc1;
+    }
+
+    &__btn{
+        max-width: 135px;
+        width: 100%;
+        color: #fff;
+        border: none;
+        background-color: #ffbb42;
+        padding: 16px 0;
+        text-transform: uppercase;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .price{
+        display: flex;
+        flex-direction: column;
+
+        &__item{
+            margin-bottom: 20px;
+        }
+    }
+}

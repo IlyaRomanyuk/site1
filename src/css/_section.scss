@@ -1,0 +1,48 @@
+.section{
+    text-align: center;
+    padding: 135px 0;
+    color: #394b50;
+
+    &__title{
+        font-size: 30px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase; 
+    }
+
+    &__text{
+        font-size: 16px;
+        margin-bottom: 92px;
+    }
+
+    &--sr{
+        padding-bottom: 50px;
+    }
+
+    &--price{
+        background-color: #e7edf3;
+    }
+
+    &--rev{
+        background-color: #ffc155;
+    }
+
+    &--map{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 991px) {         
+    .section{
+        padding: 70px 0;
+
+        &__title{
+            font-size: 20px;
+        }
+
+        &__text{
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+}
